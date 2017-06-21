@@ -4,13 +4,22 @@
     "cost" : 1000.0
   }, {
     "name" : "Python",
-    "cost" : 600.0
-  }, {
-    "name" : "ProjectManagement",
     "cost" : 1000.0
   }, {
     "name" : "DB",
-    "cost" : 1200.0
+    "cost" : 1000.0
+  }, {
+    "name" : "BusinessIntelligence",
+    "cost" : 1000.0
+  }, {
+    "name" : "BigData",
+    "cost" : 1000.0
+  }, {
+    "name" : "MachineLearning",
+    "cost" : 1000.0
+  }, {
+    "name" : "ProjectManagement",
+    "cost" : 1000.0
   } ],
   "resources" : [ {
     "name" : "Resource1",
@@ -21,52 +30,124 @@
   }, {
     "name" : "Resource2",
     "skills" : [ {
-      "name" : "ProjectManagement",
+      "name" : "Python",
       "cost" : 1000.0
     } ]
   }, {
     "name" : "Resource3",
     "skills" : [ {
-      "name" : "Python",
-      "cost" : 600.0
-    } ]
-  }, {
-    "name" : "Resource4",
-    "skills" : [ {
       "name" : "DB",
-      "cost" : 1200.0
-    } ]
-  }, {
-    "name" : "Resource5",
-    "skills" : [ {
-      "name" : "Java",
       "cost" : 1000.0
     } ]
   }, {
-    "name" : "Resource6",
+    "name" : "Resource4",
     "skills" : [ {
       "name" : "ProjectManagement",
       "cost" : 1000.0
     } ]
   }, {
-    "name" : "Resource7",
+    "name" : "Resource5",
     "skills" : [ {
-      "name" : "Python",
-      "cost" : 600.0
+      "name" : "BusinessIntelligence",
+      "cost" : 1000.0
     } ]
   }, {
-    "name" : "Resource8",
+    "name" : "Resource6",
+    "skills" : [ {
+      "name" : "BigData",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource7",
+    "skills" : [ {
+      "name" : "MachineLearning",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource1.1",
+    "skills" : [ {
+      "name" : "Java",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource2.1",
+    "skills" : [ {
+      "name" : "Python",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource3.1",
     "skills" : [ {
       "name" : "DB",
-      "cost" : 1200.0
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource4.1",
+    "skills" : [ {
+      "name" : "ProjectManagement",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource5.1",
+    "skills" : [ {
+      "name" : "BusinessIntelligence",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource6.1",
+    "skills" : [ {
+      "name" : "BigData",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource7.1",
+    "skills" : [ {
+      "name" : "MachineLearning",
+      "cost" : 1000.0
     } ]
   } ],
   "target" : [ {
     "skill" : {
-      "name" : "MachineLearning",
-      "cost" : 2000.0
+      "name" : "Java",
+      "cost" : 1000.0
     },
-    "count" : 10
+    "count" : 1
+  }, {
+    "skill" : {
+      "name" : "Python",
+      "cost" : 1000.0
+    },
+    "count" : 1
+  }, {
+    "skill" : {
+      "name" : "DB",
+      "cost" : 1000.0
+    },
+    "count" : 1
+  }, {
+    "skill" : {
+      "name" : "ProjectManagement",
+      "cost" : 1000.0
+    },
+    "count" : 1
+  }, {
+    "skill" : {
+      "name" : "BusinessIntelligence",
+      "cost" : 1000.0
+    },
+    "count" : 1
+  }, {
+    "skill" : {
+      "name" : "BigData",
+      "cost" : 1000.0
+    },
+    "count" : 1
+  }, {
+    "skill" : {
+      "name" : "MachineLearning",
+      "cost" : 1000.0
+    },
+    "count" : 8
   } ],
   "transformations" : [ {
     "origin" : {
@@ -75,18 +156,58 @@
     },
     "target" : {
       "name" : "MachineLearning",
-      "cost" : 2000.0
+      "cost" : 1000.0
     },
-    "cost" : 500.0
+    "cost" : 99.0
   }, {
     "origin" : {
       "name" : "Python",
-      "cost" : 600.0
+      "cost" : 1000.0
     },
     "target" : {
       "name" : "MachineLearning",
-      "cost" : 2000.0
+      "cost" : 1000.0
     },
-    "cost" : 300.0
+    "cost" : 99.0
+  }, {
+    "origin" : {
+      "name" : "ProjectManagement",
+      "cost" : 1000.0
+    },
+    "target" : {
+      "name" : "MachineLearning",
+      "cost" : 1000.0
+    },
+    "cost" : 99.0
+  }, {
+    "origin" : {
+      "name" : "DB",
+      "cost" : 1000.0
+    },
+    "target" : {
+      "name" : "MachineLearning",
+      "cost" : 1000.0
+    },
+    "cost" : 99.0
+  }, {
+    "origin" : {
+      "name" : "BusinessIntelligence",
+      "cost" : 1000.0
+    },
+    "target" : {
+      "name" : "MachineLearning",
+      "cost" : 1000.0
+    },
+    "cost" : 99.0
+  }, {
+    "origin" : {
+      "name" : "BigData",
+      "cost" : 1000.0
+    },
+    "target" : {
+      "name" : "MachineLearning",
+      "cost" : 1000.0
+    },
+    "cost" : 99.0
   } ]
 }

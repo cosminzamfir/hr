@@ -71,6 +71,9 @@ public class Input {
 	
 	public String toString() {
 		StringBuilder res = new StringBuilder();
+		res.append("Skills:\n==================\n");
+		skills.stream().forEach(e -> res.append(e).append("\n"));
+
 		res.append("Current resources:\n==================\n");
 		resources.stream().forEach(e -> res.append(e).append("\n"));
 

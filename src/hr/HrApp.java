@@ -33,19 +33,21 @@ public class HrApp {
 	private List<Requirement> uncoveredSkills = new ArrayList<>();
 	private List<Requirement> coveredSkills = new ArrayList<>();
 	private List<Resource> availableResources;
+	private Input input;
 
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			System.err.println("Usage: java SkillApp <input_file_name> [-v|--verbose]");
+			System.err.println("Usage: java HrApp <input_file_name> [-v|--verbose]");
 			System.exit(-1);
 		}
 		String fileName = args[0];
 		Input input = new JsonParser().parseFile(fileName);
 		HrApp app = new HrApp(input);
-		if(args.length ==2 && (args[1].equals("-v") || args[0].equals("--verbose"))) {
+		if(args.length ==2 && (args[1].equals("-v") || args[1].equals("--verbose"))) {
 			app.verbose = true;
 		}
-		app.process();
+		String json = app.process();
+		System.out.println(json);
 	}
 	
 	public static String run(Input input, boolean verbose) {
@@ -55,6 +57,7 @@ public class HrApp {
 	}
 
 	private HrApp(Input input) {
+		this.input = input;
 		resources = input.getResources();
 		availableResources = new ArrayList<>(resources);
 		uncoveredSkills = input.getTarget();
@@ -63,6 +66,7 @@ public class HrApp {
 	}
 
 	public String process() {
+		print(input.toString());
 		Output res = new Output();
 		print("Processing. Initial cost: " + totalCost() + " ...");
 
@@ -106,7 +110,7 @@ public class HrApp {
 		res.setTotalCost(totalCost());
 
 		String json = new JsonParser().getJson(res);
-		System.out.println(json);
+		print(res.toString());
 		return json;
 	}
 
@@ -128,7 +132,7 @@ public class HrApp {
 			}
 		}
 		for (Requirement req : coveredSkills) {
-			if (req.getClass().equals(targetSkill)) {
+			if (req.getSkill().equals(targetSkill)) {
 				req.setCount(req.getCount() + 1);
 				return;
 			}
