@@ -1,0 +1,92 @@
+{
+  "skills" : [ {
+    "name" : "Java",
+    "cost" : 1000.0
+  }, {
+    "name" : "Python",
+    "cost" : 600.0
+  }, {
+    "name" : "ProjectManagement",
+    "cost" : 1000.0
+  }, {
+    "name" : "DB",
+    "cost" : 1200.0
+  } ],
+  "resources" : [ {
+    "name" : "Resource1",
+    "skills" : [ {
+      "name" : "Java",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource2",
+    "skills" : [ {
+      "name" : "ProjectManagement",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource3",
+    "skills" : [ {
+      "name" : "Python",
+      "cost" : 600.0
+    } ]
+  }, {
+    "name" : "Resource4",
+    "skills" : [ {
+      "name" : "DB",
+      "cost" : 1200.0
+    } ]
+  }, {
+    "name" : "Resource5",
+    "skills" : [ {
+      "name" : "Java",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource6",
+    "skills" : [ {
+      "name" : "ProjectManagement",
+      "cost" : 1000.0
+    } ]
+  }, {
+    "name" : "Resource7",
+    "skills" : [ {
+      "name" : "Python",
+      "cost" : 600.0
+    } ]
+  }, {
+    "name" : "Resource8",
+    "skills" : [ {
+      "name" : "DB",
+      "cost" : 1200.0
+    } ]
+  } ],
+  "target" : [ {
+    "skill" : {
+      "name" : "MachineLearning",
+      "cost" : 2000.0
+    },
+    "count" : 10
+  } ],
+  "transformations" : [ {
+    "origin" : {
+      "name" : "Java",
+      "cost" : 1000.0
+    },
+    "target" : {
+      "name" : "MachineLearning",
+      "cost" : 2000.0
+    },
+    "cost" : 500.0
+  }, {
+    "origin" : {
+      "name" : "Python",
+      "cost" : 600.0
+    },
+    "target" : {
+      "name" : "MachineLearning",
+      "cost" : 2000.0
+    },
+    "cost" : 300.0
+  } ]
+}
